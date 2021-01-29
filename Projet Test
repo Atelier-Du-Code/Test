@@ -1,1 +1,25 @@
-......
+double temp, min, max;
+
+            int compteur = 0;
+
+            Console.WriteLine("Saississez votre première température! ");
+            min = max = double.Parse(Console.ReadLine());
+
+           for (compteur = 2; compteur <= 10; compteur++)
+            {
+                Console.WriteLine("Saisissez la température n° "+ compteur + "!");
+                temp = double.Parse(Console.ReadLine());
+
+                if (temp < min)
+                {
+                    min = temp;
+                }
+                if (temp > max)
+                {
+                    max = temp;
+                }
+                
+            }
+            Console.WriteLine("La température la plus basse est de : " + min);
+            Console.WriteLine("La température la plus haute est de " + max);
+            Console.ReadLine();
